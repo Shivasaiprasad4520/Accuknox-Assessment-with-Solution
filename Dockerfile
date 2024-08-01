@@ -14,8 +14,6 @@ WORKDIR /app
 # Copy the shell script files
 COPY  wisecow.sh/app
 
-ADD https://github.com/nyrahul/wisecow
-
 # Expose the application port
 EXPOSE 4499
 
