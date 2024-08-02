@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: wisecow
-          image: shivasai4520/accu-wisecow:latest
+          image: accu-wisecow:latest
           ports:
             - containerPort: 4499
           env:
