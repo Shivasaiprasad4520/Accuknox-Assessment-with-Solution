@@ -67,9 +67,9 @@ Accuknox-DevOps-Trainee-Practical-Assessment
   - Created Kubernetes manifest files in the repository
   - in that repository i manifested two yaml file those are deployment.yaml and service.yaml
    
-       kubectl apply -f deployment.yaml
+        kubectl apply -f deployment.yaml
    
-       kubectl apply -f service.yaml
+        kubectl apply -f service.yaml
   
   step 3:Continuous Integration and Deployment
 
