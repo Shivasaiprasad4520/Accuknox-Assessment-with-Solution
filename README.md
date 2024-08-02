@@ -44,25 +44,25 @@ Accuknox-DevOps-Trainee-Practical-Assessment
 
   - Setuped a minikube service
     
-       curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+        curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
     
-       sudo mv minikube-linux-amd64 /usr/local/bin/minikube
+        sudo mv minikube-linux-amd64 /usr/local/bin/minikube
     
-       sudo chmod +x /usr/local/bin/minikube
+        sudo chmod +x /usr/local/bin/minikube
     
-       minikube version
+        minikube version
     
-       curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
+        curl -LO "https://dl.k8s.io/release/$(curl -L -s https://dl.k8s.io/release/stable.txt)/bin/linux/amd64/kubectl"
     
-       sudo mv kubectl /usr/local/bin/kubectl
+        sudo mv kubectl /usr/local/bin/kubectl
     
-       sudo chmod +x /usr/local/bin/kubectl
+        sudo chmod +x /usr/local/bin/kubectl
     
-       kubectl version --client
+        kubectl version --client
     
-       minikube start
+        minikube start
     
-       kubectl cluster-info
+        kubectl cluster-info
     
   - Created Kubernetes manifest files in the repository
   - in that repository i manifested two yaml file those are deployment.yaml and service.yaml
@@ -82,7 +82,7 @@ Step 4: TLS Implementation
 - Created a Kubernetes secret to store the certificate and key.
 - Update the service manifest to use the secret for TLS communication.
   
-       kubectl apply -f ingress.yaml
+         kubectl apply -f ingress.yaml
  
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 # statement - 2
