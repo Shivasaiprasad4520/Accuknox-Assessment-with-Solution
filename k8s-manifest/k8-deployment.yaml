@@ -1,0 +1,24 @@
+# deployment.yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: wisecow-deployment
+  namespace: wisecow
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: wisecow
+  template:
+    metadata:
+      labels:
+        app: wisecow
+    spec:
+      containers:
+        - name: wisecow
+          image: shivasai4520/accu-wisecow:latest
+          ports:
+            - containerPort: 4499
+          env:
+            - name: NODE_ENV
+              value: "production"
